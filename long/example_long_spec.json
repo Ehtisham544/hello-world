@@ -1,0 +1,481 @@
+{
+ "title": "CSC Scholarship 2027: Complete Application Process",
+ "thumb": {
+  "tag": "FULLY FUNDED",
+  "big": "CSC 2027",
+  "line1": "HOW TO APPLY",
+  "line2": "STEP BY STEP",
+  "emo": "🎓"
+ },
+ "slides": [
+  {
+   "kind": "intro",
+   "title": "CSC SCHOLARSHIP 2027",
+   "sub": "The complete application process, step by step",
+   "items": [
+    {
+     "say": "Every year, the Chinese government gives thousands of international students a fully funded degree in China. Free tuition, a free dorm, medical insurance, and a monthly stipend."
+    },
+    {
+     "say": "In this video, I'll walk you through the entire application process for the C S C scholarship, from choosing a university, to getting your visa. Step by step, with nothing skipped."
+    },
+    {
+     "say": "Save this video, because you'll want to come back to it while you apply. Let's get started."
+    }
+   ]
+  },
+  {
+   "kind": "chapter",
+   "num": "01",
+   "title": "What the scholarship covers",
+   "items": [
+    {
+     "say": "Chapter one. What does the Chinese Government Scholarship actually give you?"
+    }
+   ]
+  },
+  {
+   "kind": "list",
+   "chapter": "01 · WHAT'S COVERED",
+   "title": "A fully funded package",
+   "items": [
+    {
+     "say": "First, your tuition fees are completely covered.",
+     "b": "*Tuition* fully covered",
+     "emo": "🏫"
+    },
+    {
+     "say": "Second, you get a free university dormitory, or an accommodation subsidy if you live off campus.",
+     "b": "Free *dorm* or housing subsidy",
+     "emo": "🏠"
+    },
+    {
+     "say": "Third, comprehensive medical insurance for international students.",
+     "b": "Comprehensive *medical insurance*",
+     "emo": "🏥"
+    },
+    {
+     "say": "And fourth, a monthly stipend. The standard rates are two thousand five hundred yuan a month for bachelor's students, three thousand for master's students, and three thousand five hundred for P H D students.",
+     "b": "Stipend: *¥2,500 / ¥3,000 / ¥3,500*",
+     "emo": "💸"
+    },
+    {
+     "say": "The one thing that's not covered is your flight to China. Plan for that.",
+     "b": "Not covered: your *flight*",
+     "emo": "✈️"
+    }
+   ]
+  },
+  {
+   "kind": "chapter",
+   "num": "02",
+   "title": "Type A vs Type B",
+   "items": [
+    {
+     "say": "Chapter two. There are two main ways to apply, and choosing the right one matters."
+    }
+   ]
+  },
+  {
+   "kind": "list",
+   "chapter": "02 · TWO ROUTES",
+   "title": "Type A vs Type B",
+   "items": [
+    {
+     "say": "Type A is the bilateral program. You apply through the dispatching authority in your home country, which is usually the Chinese embassy, or your country's education ministry.",
+     "b": "*Type A*: through your embassy / ministry",
+     "emo": "🏛️"
+    },
+    {
+     "say": "Type A applications usually open around January and close by early April, but your embassy sets the exact deadline, so always check their notice.",
+     "b": "Usually *January to early April*",
+     "emo": "📅"
+    },
+    {
+     "say": "Type B is the Chinese University Program. You apply directly to one Chinese university, which then nominates you for the scholarship.",
+     "b": "*Type B*: directly through a university",
+     "emo": "🎓"
+    },
+    {
+     "say": "Each university sets its own Type B deadline. Many fall between December and March, so start early.",
+     "b": "Each university has its *own deadline*",
+     "emo": "⏰"
+    },
+    {
+     "say": "Important: you can only submit one Type B application per year. So choose your university carefully.",
+     "b": "Only *ONE* Type B application per year",
+     "emo": "☝️"
+    }
+   ]
+  },
+  {
+   "kind": "chapter",
+   "num": "03",
+   "title": "Who can apply",
+   "items": [
+    {
+     "say": "Chapter three. Are you eligible?"
+    }
+   ]
+  },
+  {
+   "kind": "list",
+   "chapter": "03 · ELIGIBILITY",
+   "title": "Basic requirements",
+   "items": [
+    {
+     "say": "You must be a non Chinese citizen, in good physical and mental health.",
+     "b": "Non-Chinese citizen, *good health*",
+     "emo": "🌍"
+    },
+    {
+     "say": "For a bachelor's degree, you need a high school diploma, and you must be under twenty five.",
+     "b": "Bachelor's: high school, *under 25*",
+     "emo": "📘"
+    },
+    {
+     "say": "For a master's degree, you need a bachelor's degree, and you must be under thirty five.",
+     "b": "Master's: Bachelor's, *under 35*",
+     "emo": "📗"
+    },
+    {
+     "say": "For a P H D, you need a master's degree, and you must be under forty.",
+     "b": "PhD: Master's, *under 40*",
+     "emo": "📕"
+    },
+    {
+     "say": "For English taught programs, most universities ask for IELTS or TOEFL, or proof that your last degree was taught in English. For Chinese taught programs, you'll need an H S K certificate.",
+     "b": "English: *IELTS / TOEFL* · Chinese: *HSK*",
+     "emo": "📝"
+    },
+    {
+     "say": "Bachelor's applicants should also know that a new test, the C S C A, is now required, so register for it before your deadline.",
+     "b": "Bachelor's: *CSCA* test required",
+     "emo": "✏️"
+    }
+   ]
+  },
+  {
+   "kind": "chapter",
+   "num": "04",
+   "title": "Step 1: Choose your university",
+   "items": [
+    {
+     "say": "Now let's go through the process itself. Step one: choose your university and program."
+    }
+   ]
+  },
+  {
+   "kind": "list",
+   "chapter": "STEP 1 · CHOOSE",
+   "title": "Choose university & program",
+   "items": [
+    {
+     "say": "Go to campus china dot org, and check which universities accept Chinese Government Scholarship students in your field.",
+     "b": "Search programs on *campuschina.org*",
+     "emo": "🔎"
+    },
+    {
+     "say": "Then open the university's own international admissions website, and read their scholarship notice for this year.",
+     "b": "Read the university's *scholarship notice*",
+     "emo": "📄"
+    },
+    {
+     "say": "Write down the university's agency number. Every university has one. For example, Wuhan University's is one zero four eight six, and Sichuan University's is one zero six one zero.",
+     "b": "Note its *agency number* (e.g. 10486)",
+     "emo": "🔢"
+    },
+    {
+     "say": "This number is critical. If you enter the wrong agency number, your application will not reach the university.",
+     "b": "Wrong number = application *lost*",
+     "emo": "⚠️"
+    }
+   ]
+  },
+  {
+   "kind": "chapter",
+   "num": "05",
+   "title": "Step 2: Get an acceptance letter",
+   "items": [
+    {
+     "say": "Step two. Try to get a pre admission or acceptance letter from a professor."
+    }
+   ]
+  },
+  {
+   "kind": "list",
+   "chapter": "STEP 2 · PROFESSOR",
+   "title": "Acceptance letter",
+   "items": [
+    {
+     "say": "For master's and P H D programs, a professor's acceptance letter is often optional, but applicants who have one get priority. It can make a big difference.",
+     "b": "Optional, but gives you *priority*",
+     "emo": "⭐"
+    },
+    {
+     "say": "Find professors in your field on the university's department pages, and read a couple of their recent papers.",
+     "b": "Find professors on *department pages*",
+     "emo": "👨‍🏫"
+    },
+    {
+     "say": "Then send a short, polite email. Introduce yourself, explain why their research matches your interests, and attach your C V and research proposal.",
+     "b": "Short email + *CV* + *research proposal*",
+     "emo": "📧"
+    },
+    {
+     "say": "Email several professors, not just one, and follow up politely after a week or two if you don't hear back.",
+     "b": "Email *several* professors, follow up",
+     "emo": "🔁"
+    }
+   ]
+  },
+  {
+   "kind": "chapter",
+   "num": "06",
+   "title": "Step 3: Prepare your documents",
+   "items": [
+    {
+     "say": "Step three. Prepare your documents. This takes the longest, so start early."
+    }
+   ]
+  },
+  {
+   "kind": "list",
+   "chapter": "STEP 3 · DOCUMENTS",
+   "title": "Documents checklist (1/2)",
+   "items": [
+    {
+     "say": "Your passport information page. Make sure your passport stays valid well beyond the date the university asks for.",
+     "b": "*Passport* information page",
+     "emo": "🛂"
+    },
+    {
+     "say": "Your highest degree certificate and your transcripts, notarized. If they're not in Chinese or English, you'll need certified translations.",
+     "b": "Notarized *degree* + *transcripts*",
+     "emo": "🎓"
+    },
+    {
+     "say": "A study plan or research proposal. Master's and P H D applicants usually need at least eight hundred words, and some universities ask for more.",
+     "b": "*Study plan*: 800+ words (postgrad)",
+     "emo": "📝"
+    },
+    {
+     "say": "Two recommendation letters from professors or associate professors, for master's and P H D applicants.",
+     "b": "*2 recommendation letters*",
+     "emo": "✉️"
+    }
+   ]
+  },
+  {
+   "kind": "list",
+   "chapter": "STEP 3 · DOCUMENTS",
+   "title": "Documents checklist (2/2)",
+   "items": [
+    {
+     "say": "Your language certificate, like IELTS, TOEFL, or H S K, depending on your program.",
+     "b": "*Language* certificate",
+     "emo": "🗣️"
+    },
+    {
+     "say": "The Foreigner Physical Examination Form, completed by a doctor, with your blood test results. It's usually valid for six months.",
+     "b": "*Physical examination* form",
+     "emo": "🩺"
+    },
+    {
+     "say": "A non criminal record certificate, usually issued within six months before you apply.",
+     "b": "*Police* / non-criminal certificate",
+     "emo": "📃"
+    },
+    {
+     "say": "And if you have one, your professor's acceptance letter.",
+     "b": "Acceptance letter *(if you have it)*",
+     "emo": "✅"
+    },
+    {
+     "say": "Scan everything clearly, in color. Unclear scans can get your application rejected.",
+     "b": "Scan *clearly*, in color",
+     "emo": "🖨️"
+    }
+   ]
+  },
+  {
+   "kind": "chapter",
+   "num": "07",
+   "title": "Step 4: Apply on the CSC portal",
+   "items": [
+    {
+     "say": "Step four. Submit your application on the official C S C portal."
+    }
+   ]
+  },
+  {
+   "kind": "list",
+   "chapter": "STEP 4 · CSC PORTAL",
+   "title": "The CSC online application",
+   "items": [
+    {
+     "say": "Go to study in china dot C S C dot edu dot c n, create an account, and log in.",
+     "b": "*studyinchina.csc.edu.cn* → register",
+     "emo": "💻"
+    },
+    {
+     "say": "Fill in your personal information first. You can't start the application until this part is complete.",
+     "b": "Complete your *personal information*",
+     "emo": "👤"
+    },
+    {
+     "say": "Next, choose your program category, Type A or Type B, and enter the agency number of your embassy or university.",
+     "b": "Choose *Type A / B* + *agency number*",
+     "emo": "🔢"
+    },
+    {
+     "say": "Fill in your study details, language ability and study plan, then upload all your documents.",
+     "b": "Add study plan + *upload documents*",
+     "emo": "📤"
+    },
+    {
+     "say": "Check everything carefully before you press submit. After submitting, you can't edit it, unless you withdraw it before it's accepted.",
+     "b": "Check twice — *no edits* after submit",
+     "emo": "🔒"
+    },
+    {
+     "say": "Finally, download and print your application form, sign it, and upload the signed copy wherever your university asks for it.",
+     "b": "Download, *sign* and keep your form",
+     "emo": "🖊️"
+    }
+   ]
+  },
+  {
+   "kind": "chapter",
+   "num": "08",
+   "title": "Step 5: Apply to the university",
+   "items": [
+    {
+     "say": "Step five. For Type B, and for many Type A universities too, you also apply on the university's own portal."
+    }
+   ]
+  },
+  {
+   "kind": "list",
+   "chapter": "STEP 5 · UNIVERSITY",
+   "title": "University online application",
+   "items": [
+    {
+     "say": "Register on the university's international student application system.",
+     "b": "Register on the *university portal*",
+     "emo": "🏫"
+    },
+    {
+     "say": "Choose Chinese Government Scholarship as your funding type, select your program, and upload the same documents.",
+     "b": "Funding: *Chinese Government Scholarship*",
+     "emo": "📋"
+    },
+    {
+     "say": "Submit before the university's deadline. You need both applications, C S C and university. Missing either one usually means you won't be considered.",
+     "b": "You need *BOTH* applications",
+     "emo": "⚠️"
+    }
+   ]
+  },
+  {
+   "kind": "chapter",
+   "num": "09",
+   "title": "Results and visa",
+   "items": [
+    {
+     "say": "Chapter nine. What happens after you apply?"
+    }
+   ]
+  },
+  {
+   "kind": "list",
+   "chapter": "09 · AFTER YOU APPLY",
+   "title": "Results, admission & visa",
+   "items": [
+    {
+     "say": "First, the university or embassy reviews your application. Some universities hold online interviews, so check your email often.",
+     "b": "Review + possible *interview*",
+     "emo": "🎥"
+    },
+    {
+     "say": "Shortlisted candidates are recommended to the China Scholarship Council for final approval.",
+     "b": "CSC makes the *final decision*",
+     "emo": "🏛️"
+    },
+    {
+     "say": "Final results usually come out around July or August. You can check your status in the C S C system.",
+     "b": "Results: usually *July–August*",
+     "emo": "📬"
+    },
+    {
+     "say": "Winners receive an admission letter, and a visa form called J W two oh one or J W two oh two.",
+     "b": "Admission letter + *JW201 / JW202*",
+     "emo": "📨"
+    },
+    {
+     "say": "Take these to the Chinese embassy to apply for your X one student visa, and get ready to fly to China in late August or September.",
+     "b": "Apply for your *X1 student visa*",
+     "emo": "✈️"
+    }
+   ]
+  },
+  {
+   "kind": "chapter",
+   "num": "10",
+   "title": "Mistakes to avoid",
+   "items": [
+    {
+     "say": "Chapter ten. The mistakes that get applications rejected."
+    }
+   ]
+  },
+  {
+   "kind": "list",
+   "chapter": "10 · AVOID THESE",
+   "title": "Common mistakes",
+   "items": [
+    {
+     "say": "Number one: entering the wrong agency number.",
+     "b": "❌ Wrong *agency number*",
+     "emo": "1️⃣"
+    },
+    {
+     "say": "Number two: submitting only the C S C application, and forgetting the university application, or the other way around.",
+     "b": "❌ Only *one* of the two applications",
+     "emo": "2️⃣"
+    },
+    {
+     "say": "Number three: a generic study plan. Make it specific to the program and the professor.",
+     "b": "❌ *Generic* study plan",
+     "emo": "3️⃣"
+    },
+    {
+     "say": "Number four: blurry scans, or expired documents.",
+     "b": "❌ *Blurry* or expired documents",
+     "emo": "4️⃣"
+    },
+    {
+     "say": "And number five: paying an agent. The China Scholarship Council does not use any agents. Applying is free, and you can do it all yourself.",
+     "b": "❌ Paying *agents* — apply yourself",
+     "emo": "5️⃣"
+    }
+   ]
+  },
+  {
+   "kind": "outro",
+   "title": "YOU CAN DO THIS",
+   "sub": "New scholarships every day on Scholarships in China",
+   "items": [
+    {
+     "say": "That's the complete process. Choose your university, contact professors, prepare your documents, and submit both applications before the deadline."
+    },
+    {
+     "say": "Every day on this channel, we share a new fully funded scholarship with its deadline and agency number. Subscribe, so you don't miss the one that's right for you."
+    },
+    {
+     "say": "And if you have a question, drop it in the comments. Good luck with your application!"
+    }
+   ]
+  }
+ ]
+}

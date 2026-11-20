@@ -1,0 +1,10 @@
+kokoro.onnx
+voices.bin
+*.wav
+durs.json
+part*.mp4
+vid_long.mp4
+parts.txt
+lf_*.png
+__pycache__/
+chapters.txt
