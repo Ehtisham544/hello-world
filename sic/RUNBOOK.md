@@ -9,8 +9,8 @@ Owner (SHAM) gave full control: research, script, render and post **without aski
 2. Read `sic/posted.md` (log of everything already posted). Never repeat a university/scholarship posted in the last 60 days, and never repeat a tips topic.
 
 ## 1. Pick the topic (by slot, from the prompt)
-- **Slot A (morning) and Slot B (afternoon):** one fully funded scholarship in China open to international students
-  (CSC Type A/B university programs, provincial/city government scholarships, university presidential scholarships, Belt & Road, MOFCOM, Confucius Institute etc.).
+- FIRST read `CONTENT_POOL.md` (repo root) and follow its rotation rules — the channel covers ALL funded opportunities in China, not only CSC.
+- **Slot A (morning) and Slot B (afternoon):** one funded opportunity from the pool (categories 1–10 and 12): CSC tracks, provincial/city scholarships, university scholarships, Confucius Institute, MOFCOM, elite programs (Schwarzman, Yenching…), interesting programs, fellowships, postdocs, careers/jobs after a PhD. A and B on the same day must be different categories.
   Source ideas: https://cscguideofficials.com/ (latest posts), then VERIFY on the official university admission page or campuschina.org / studyinchina.csc.edu.cn.
   Prefer scholarships whose deadline is still open. Prefer well-known universities.
 - **Slot C (evening):** a practical how-to / tips Short for scholarship applicants, rotating topics, e.g.: how to email a Chinese professor for an acceptance letter; CSC documents checklist; study plan tips; recommendation letters; Type A vs Type B; how to find your agency number; physical exam form; police certificate; common mistakes that get CSC applications rejected; IELTS vs HSK requirements; stipend amounts by level; best months to apply; how to pick universities; life on a CSC scholarship.
@@ -56,7 +56,7 @@ Confirm the result's `channelId` is `UC2SR24QYqYCaqp8wBYR70Qw`.
 Post one top-level comment on the new video inviting questions (Zapier `youtube_make_api_mutating_request`, method POST, url `https://www.googleapis.com/youtube/v3/commentThreads`, querystring `{"part":"snippet"}`, header Content-Type application/json, body `{"snippet":{"channelId":"UC2SR24QYqYCaqp8wBYR70Qw","videoId":"ID","topLevelComment":{"snippet":{"textOriginal":"…"}}}}`). Vary the wording; include the key deadline if known.
 
 ## 6. Log
-Append to `sic/posted.md`: `| NNN | date | slot | topic | video id | https://youtube.com/shorts/ID |` and add the hook text at the end of the topic cell as `(hook: …)`, commit to `main` and push (`git -c push.negotiate=true push origin main`).
+Append to `sic/posted.md`: `| NNN | date | slot | [cat N] topic | video id | https://youtube.com/shorts/ID |` and add the hook text at the end of the topic cell as `(hook: …)`, commit to `main` and push (`git -c push.negotiate=true push origin main`).
 
 ## 7. Report
 Send the owner one short message: topic + YouTube link. If something failed (render, upload, auth), say exactly what and stop — never post a broken or unverified video.

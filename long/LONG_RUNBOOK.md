@@ -6,6 +6,7 @@ Channel: **Scholarships in China (SIC)**, channel ID `UC2SR24QYqYCaqp8wBYR70Qw`.
 Attach repo `Ehtisham544/hello-world` (add_repo, access `push`), clone `git clone --depth 1 https://github.com/Ehtisham544/hello-world /home/claude/hello-world`. Read `long/long_topics.md`.
 
 ## 1. Pick the topic
+Read `CONTENT_POOL.md` (repo root). When adding new queue topics, spread them across the categories (not only CSC).
 Take the FIRST row in `long/long_topics.md` with status `todo` (or `ready` = already rendered and hosted: skip to step 5 and use the file/thumbnail URLs written in that row).
 
 ## 2. Research

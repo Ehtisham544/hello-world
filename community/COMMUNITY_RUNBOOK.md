@@ -5,7 +5,9 @@ YouTube's API does NOT allow apps to publish community posts, so each day you PR
 ## 1. Setup
 Attach repo `Ehtisham544/hello-world` (add_repo, access `push`), clone `git clone --depth 1 https://github.com/Ehtisham544/hello-world /home/claude/hello-world`. Read `community/posted_community.md`, `sic/posted.md` (recent Shorts) and `long/long_topics.md`.
 
-## 2. Choose today's post type (rotate; never the same type two days in a row)
+## 2. Choose today's post type
+Read `CONTENT_POOL.md` (repo root) — feature different categories of opportunities (not only CSC) across the week.
+ (rotate; never the same type two days in a row)
 1. **Poll** (best engagement): question + 2–4 options, e.g. "Which degree are you applying for in 2027? Bachelor's / Master's / PhD / Chinese language".
 2. **Deadline alert**: one real, open scholarship deadline (verified on the official page this run) + image card.
 3. **Quick tip**: one practical application tip + image card.
