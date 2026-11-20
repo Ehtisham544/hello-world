@@ -1,0 +1,97 @@
+{
+ "header": "WUHAN UNIVERSITY  ·  CSC 2027",
+ "beats": [
+  {
+   "say": "What if China paid you to study?",
+   "cap": "What if China\n*PAID YOU*\nto study?",
+   "emo": "🤑",
+   "hook": true
+  },
+  {
+   "say": "Wuhan University, one of China's top universities,",
+   "cap": "*Wuhan University*\none of China's\ntop universities",
+   "emo": "🎓"
+  },
+  {
+   "say": "is offering fully funded scholarships",
+   "cap": "is offering\n*FULLY FUNDED*\nscholarships",
+   "emo": "✅"
+  },
+  {
+   "say": "for students from any country.",
+   "cap": "for students from\n*ANY COUNTRY*",
+   "emo": "🌍"
+  },
+  {
+   "say": "Zero tuition.",
+   "cap": "Tuition:\n*FREE*",
+   "emo": "🏫"
+  },
+  {
+   "say": "Free dorm.",
+   "cap": "Dorm:\n*FREE*",
+   "emo": "🏠"
+  },
+  {
+   "say": "Free medical insurance.",
+   "cap": "Insurance:\n*FREE*",
+   "emo": "🏥"
+  },
+  {
+   "say": "And they pay you up to three thousand five hundred yuan, every month.",
+   "cap": "+ *¥{n}*\nevery month",
+   "emo": "💸",
+   "count": 3500
+  },
+  {
+   "say": "Who can apply?",
+   "cap": "Who can\n*APPLY?*",
+   "emo": "🤔"
+  },
+  {
+   "say": "Master's: under thirty five, with a bachelor's degree.",
+   "cap": "Master's\n*under 35*\nwith a Bachelor's",
+   "emo": "👩‍🎓"
+  },
+  {
+   "say": "P H D: under forty, with a master's degree.",
+   "cap": "PhD\n*under 40*\nwith a Master's",
+   "emo": "👨‍🔬"
+  },
+  {
+   "say": "You need a G P A of three point oh, or seventy five percent.",
+   "cap": "GPA *3.0/4*\nor *75%*",
+   "emo": "📊"
+  },
+  {
+   "say": "Plus IELTS six, or TOEFL eighty.",
+   "cap": "IELTS *6.0*\nor TOEFL *80*",
+   "emo": "📝"
+  },
+  {
+   "say": "Step one. Apply on the C S C portal. Choose Type B, agency number one zero four eight six.",
+   "cap": "STEP 1\nCSC portal\nType B · *10486*",
+   "emo": "1️⃣"
+  },
+  {
+   "say": "Step two. Apply on Wuhan University's admission website.",
+   "cap": "STEP 2\n*admission.whu.edu.cn*",
+   "emo": "2️⃣"
+  },
+  {
+   "say": "Deadline: February twenty fifth, twenty twenty seven.",
+   "cap": "Deadline\n*25 FEB 2027*",
+   "emo": "⏰"
+  },
+  {
+   "say": "Save this, and send it to a friend who needs it.",
+   "cap": "*SAVE* this &\nsend it to a friend",
+   "emo": "🔖"
+  },
+  {
+   "say": "Follow for a new fully funded scholarship, every day.",
+   "cap": "Follow for a new\n*scholarship*\nevery day",
+   "emo": "🔔"
+  }
+ ]
+}

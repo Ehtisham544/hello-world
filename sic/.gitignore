@@ -1,0 +1,7 @@
+kokoro.onnx
+voices.bin
+*.wav
+durs.json
+video_only.mp4
+*.png
+__pycache__/
