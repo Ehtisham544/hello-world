@@ -42,6 +42,9 @@ URLs: `https://raw.githubusercontent.com/Ehtisham544/hello-world/long-videos/<fi
 `title` (≤100 chars, keyword-first, e.g. "CSC Scholarship 2027: How to Apply STEP BY STEP (Fully Funded)"), `description` (2-line summary, chapter timestamps, official links, "Subscribe to Scholarships in China (SIC)…", 6–8 hashtags), `video` = mp4 URL, `thumbnail` = jpg URL, `privacy_status` "public", `category_id` "27", `made_for_kids` "false", `default_language` "en", `default_audio_language` "en", `notify_subscribers` "true", `tags` 10–15.
 If the upload fails only because of the thumbnail, retry once without `thumbnail` and mention it in the report. Confirm `channelId` = `UC2SR24QYqYCaqp8wBYR70Qw`.
 
+## 6b. Starter comment
+Post a top-level comment inviting questions (same API call as in `sic/RUNBOOK.md` step 5b). Each long video must be new content, with a different hook, title style and thumbnail wording from previous long videos.
+
 ## 7. Log
 In `long/long_topics.md` set the row's status to `posted` with date + video link; commit to `main` and push (`git -c push.negotiate=true push origin main`). If the queue has fewer than 3 `todo` rows, append new useful topics (no duplicates).
 
