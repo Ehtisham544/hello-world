@@ -5,7 +5,9 @@ d=json.load(open("durs.json")); st=[]; t=0
 for x in d: st.append(t); t+=x+GAP
 T=t+0.4; N=int(T*SR); mix=np.zeros(N); voice=np.zeros(N); rng=np.random.default_rng(1)
 def add(buf,sig,at,g=1.0):
-    i=int(at*SR); j=min(N,i+len(sig)); buf[i:j]+=g*sig[:j-i]
+    i=int(at*SR); j=min(N,i+len(sig))
+    if j<=i: return
+    buf[i:j]+=g*sig[:j-i]
 for i,s in enumerate(st):
     a,_=sf.read(f"b{i}.wav"); a=resample_poly(a,2,1); add(voice,a,s)
 # whoosh
