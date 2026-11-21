@@ -1,7 +1,7 @@
 import json, math, re, sys, subprocess
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
-from script import SLIDES
+from script import SLIDES, TITLE
 
 W, H, FPS = 1920, 1080, 30
 GAP, CH_EXTRA, TAIL = 0.45, 0.6, 1.0
@@ -46,13 +46,35 @@ rng = np.random.default_rng(4)
 PARTS = [(rng.uniform(0, W), rng.uniform(0, H), rng.uniform(2, 5), rng.uniform(15, 45)) for _ in range(45)]
 def theme_idx(si):
     return sum(1 for j in range(si + 1) if SLIDES[j]["kind"] == "chapter") % len(BGS)
-def bg_frame(t, si):
+def bg_frame_drawn(t, si):
     b = BGS[theme_idx(si)]
     ox = int(150 + 150 * math.sin(t * 0.12)); oy = int(120 + 120 * math.cos(t * 0.09))
     im = b.crop((ox, oy, ox + W, oy + H)).convert("RGBA")
     d = ImageDraw.Draw(im)
     for (x, y, r, sp) in PARTS:
         yy = (y - t * sp) % H; d.ellipse((x - r, yy - r, x + r, yy + r), fill=(255, 255, 255, 35))
+    return im
+
+import sys as _sys, os as _os
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "media"))
+import media as M
+def _slide_tag(s):
+    if s.get("bg"): return s["bg"]
+    if s["kind"] == "intro": return "city"
+    if s["kind"] == "outro": return "graduation"
+    return M.auto_tag(s.get("title", "") + " " + " ".join(it.get("b", "") for it in s["items"]), fallback="students")
+def _item_tag(s, it):
+    return it.get("bg") or (M.auto_tag(it.get("b", "") + " " + it["say"], fallback=_slide_tag(s)) if s["kind"] == "list" else _slide_tag(s))
+_SLOT_START = {}
+for _si, _ii, _st, _d in TL:
+    _SLOT_START.setdefault((_si, _ii // 2), _st)
+def bg_frame(t, si, ii):
+    s = SLIDES[si]; slot = (si, ii // 2)
+    tag = _item_tag(s, s["items"][(ii // 2) * 2])
+    src = M.pick(tag, f"{TITLE}:{si}:{ii // 2}")
+    k = int(round((t - _SLOT_START[slot]) * FPS))
+    im = M.frame_for(src, k, W, H, slot).convert("RGBA")
+    im.alpha_composite(M.shade(W, H, 120 if s["kind"] == "list" else 100))
     return im
 
 # ---------- helpers
@@ -126,7 +148,7 @@ def frame(fi):
     t = fi / FPS
     idx = max(i for i, x in enumerate(TL) if x[2] <= t + 1e-6)
     si, ii, st, dur = TL[idx]; lt = t - st; s = SLIDES[si]; slt = t - SLIDE_START[si]
-    im = bg_frame(t, si)
+    im = bg_frame(t, si, ii)
     if s["kind"] == "list":
         L = list_layer(si, ii)
         if ii > 0 and lt < 0.3:

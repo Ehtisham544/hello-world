@@ -121,15 +121,26 @@ SEC={0:map_frame,1:city_frame,2:campus_frame,3:map_frame}
 _n=len(R.BEATS); B1=max(1,round(_n*0.22)); B2=max(B1+1,round(_n*0.5)); B3=max(B2+1,_n-2)
 def sec_of(bi): return 0 if bi<B1 else 1 if bi<B2 else 2 if bi<B3 else 3
 CUTS=[R.starts[B1],R.starts[B2],R.starts[B3]]
+import sys as _sys, os as _os
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "media"))
+import media as M
+# background tag per beat: explicit "bg" in spec, else auto from text
+_TAGS = [b.get("bg") or M.auto_tag(b["say"] + " " + b["cap"], fallback=("china" if i % 2 else "students")) for i, b in enumerate(R.BEATS)]
+_GROUP = []; g = 0
+run = 0
+for i in range(len(_TAGS)):
+    if i > 0 and (_TAGS[i] != _TAGS[i - 1] or run >= 3): g += 1; run = 0
+    _GROUP.append(g); run += 1
+_GSTART = {}
+for i, gg in enumerate(_GROUP): _GSTART.setdefault(gg, R.starts[i])
+_TOPIC = R.HEADER
 def bg(t):
-    bi=max(i for i,s in enumerate(R.starts) if s<=t+1e-6); s=sec_of(bi)
-    cur=SEC[s](t).convert("RGBA")
-    for c in CUTS:
-        if c<=t<c+0.4:
-            prev=SEC[sec_of(R.starts.index(c)-1)](t).convert("RGBA")
-            cur=Image.blend(prev,cur,(t-c)/0.4)
-    cur.alpha_composite(Image.new("RGBA",(W,H),(0,0,0,55)))
-    return cur
+    bi = max(i for i, s in enumerate(R.starts) if s <= t + 1e-6)
+    gg = _GROUP[bi]; src = M.pick(_TAGS[bi], f"{_TOPIC}:{gg}")
+    k = int(round((t - _GSTART[gg]) * FPS))
+    im = M.frame_for(src, k, W, H, gg).convert("RGBA")
+    im.alpha_composite(M.shade(W, H, 105))
+    return im
 def frame(fi):
     t=fi/FPS; bi=max(i for i,s in enumerate(R.starts) if s<=t+1e-6); lt=t-R.starts[bi]; b=R.BEATS[bi]
     im=bg(t); d=ImageDraw.Draw(im)

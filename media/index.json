@@ -1,0 +1,97 @@
+{
+ "clips": [
+  {
+   "id": "students_00",
+   "tag": "students",
+   "dur": 8.0
+  },
+  {
+   "id": "exam_01",
+   "tag": "exam",
+   "dur": 8.0
+  },
+  {
+   "id": "campus_02",
+   "tag": "campus",
+   "dur": 8.0
+  },
+  {
+   "id": "city_03",
+   "tag": "city",
+   "dur": 8.0
+  },
+  {
+   "id": "china_04",
+   "tag": "china",
+   "dur": 8.0
+  },
+  {
+   "id": "city_05",
+   "tag": "city",
+   "dur": 8.0
+  },
+  {
+   "id": "graduation_06",
+   "tag": "graduation",
+   "dur": 8.0
+  },
+  {
+   "id": "documents_07",
+   "tag": "documents",
+   "dur": 8.0
+  },
+  {
+   "id": "china_08",
+   "tag": "china",
+   "dur": 6.26
+  },
+  {
+   "id": "china_09",
+   "tag": "china",
+   "dur": 7.9
+  },
+  {
+   "id": "documents_10",
+   "tag": "documents",
+   "dur": 8.0
+  },
+  {
+   "id": "study_11",
+   "tag": "study",
+   "dur": 8.0
+  },
+  {
+   "id": "china_12",
+   "tag": "china",
+   "dur": 8.0
+  },
+  {
+   "id": "campus_13",
+   "tag": "campus",
+   "dur": 8.0
+  },
+  {
+   "id": "graduation_14",
+   "tag": "graduation",
+   "dur": 8.0
+  }
+ ],
+ "images": [
+  {
+   "id": "documents_a41570f2.jpg",
+   "tag": "documents"
+  },
+  {
+   "id": "documents_a0969a80.jpg",
+   "tag": "documents"
+  },
+  {
+   "id": "money_650e6eed.jpg",
+   "tag": "money"
+  },
+  {
+   "id": "money_01a78d7d.jpg",
+   "tag": "money"
+  }
+ ]
+}

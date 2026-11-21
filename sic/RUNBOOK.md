@@ -31,6 +31,9 @@ Owner (SHAM) gave full control: research, script, render and post **without aski
 - `emo`: one common emoji per beat (🎓🌍💸✅🏠🏥🤔📊📝⏰🔖🔔1️⃣2️⃣3️⃣📧📄✈️🇨🇳 etc.).
 - Optional money counter beat: `"cap": "+ *¥{n}*\nevery month", "count": 3500`.
 
+## Real-footage backgrounds (media library)
+Each beat/slide automatically gets a matching real background video/photo from `media/` (tags: students, study, exam, campus, city, china, graduation, documents, money) chosen from its text. To force one, add `"bg": "<tag>"` to a beat (Shorts) or to a slide/item (long videos), e.g. `"bg": "money"` for stipend lines, `"documents"` for document lists, `"graduation"` for wins/CTA, `"city"`/`"china"` for places, `"campus"` for universities. Use a variety of tags across the video.
+
 ## 3. Render
 ```
 cd /home/claude/hello-world/sic

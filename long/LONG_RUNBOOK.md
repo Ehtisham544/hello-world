@@ -23,6 +23,9 @@ Standard Chinese Government Scholarship stipends (OK to state): Bachelor CNY 2,5
 - Intro: hook in the first sentence + promise of the video + "save this video".
 - Outro: recap + "Every day on this channel we share a new fully funded scholarship… subscribe" + ask for comments.
 
+## Real-footage backgrounds (media library)
+Each beat/slide automatically gets a matching real background video/photo from `media/` (tags: students, study, exam, campus, city, china, graduation, documents, money) chosen from its text. To force one, add `"bg": "<tag>"` to a beat (Shorts) or to a slide/item (long videos), e.g. `"bg": "money"` for stipend lines, `"documents"` for document lists, `"graduation"` for wins/CTA, `"city"`/`"china"` for places, `"campus"` for universities. Use a variety of tags across the video.
+
 ## 4. Render
 ```
 cd /home/claude/hello-world/long
