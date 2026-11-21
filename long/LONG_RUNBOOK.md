@@ -33,6 +33,8 @@ LSPEC=/home/claude/long_spec.json OUT=/home/claude/long.mp4 THUMB=/home/claude/t
 ```
 Prints chapter timestamps at the end (also `long/chapters.txt`). Check 3 frames (`ffmpeg -ss T -i /home/claude/long.mp4 -frames:v 1 f.png`, Read them): no overflowing text. Check the thumbnail image too.
 
+Before hosting: the mp4 must be under 95 MB (GitHub limit). If larger, re-encode: `ffmpeg -i in.mp4 -c:v libx264 -crf 28 -preset veryfast -c:a copy out.mp4`.
+
 ## 5. Host (public links) on branch `long-videos` (keep only the newest files)
 ```
 rm -rf /tmp/lv && mkdir /tmp/lv && cd /tmp/lv && git init -q && git checkout -q -b long-videos

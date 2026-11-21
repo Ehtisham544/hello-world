@@ -201,7 +201,7 @@ if __name__ == "__main__":
     part, nparts = int(sys.argv[1]), int(sys.argv[2])
     a, b = NF * part // nparts, NF * (part + 1) // nparts
     p = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
-                          "-c:v", "libx264", "-crf", "20", "-preset", "veryfast", "-pix_fmt", "yuv420p", f"part{part}_tmp.mp4"], stdin=subprocess.PIPE)
+                          "-c:v", "libx264", "-crf", "26", "-preset", "veryfast", "-pix_fmt", "yuv420p", f"part{part}_tmp.mp4"], stdin=subprocess.PIPE)
     for fi in range(a, b): p.stdin.write(frame(fi).tobytes())
     p.stdin.close(); p.wait()
     import os; os.replace(f"part{part}_tmp.mp4", f"part{part}.mp4"); print("part", part, "done", b - a)
