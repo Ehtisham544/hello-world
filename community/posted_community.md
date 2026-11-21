@@ -3,3 +3,4 @@
 | Date (PKT) | Type | Summary |
 |---|---|---|
 | 2026-11-20 | deadline alert | Wuhan University CSC 2027, deadline 25 Feb 2027, agency 10486 (sample) |
+| 2026-11-21 | poll | [cat mix] Audience poll: which funded opportunity for 2027 — CSC / University-provincial / Elite (Schwarzman, Yenching) / Fellowship-postdoc; asks country & field in comments |
