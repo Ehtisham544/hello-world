@@ -1,6 +1,6 @@
 # SIC content pool — read before choosing ANY topic (Shorts, long videos, community posts)
 
-The channel covers ALL funded opportunities in China, not only CSC. Rotate across these categories and never cover the same category twice in a row. Over any 7 days of Shorts, at least 5 different categories must appear, and CSC content must be under 40% of posts.
+The channel covers ALL funded opportunities in China, not only CSC. Rotate across these categories and never cover the same category twice in a row. Over any 7 days of Shorts (2 per day), at least 5 different categories must appear, and CSC content must be under 40% of posts.
 
 ## Categories
 1. **CSC / Chinese Government Scholarship**: Type A (bilateral), Type B (university program), plus special CSC tracks (Silk Road, High-Level Graduate, EU Window, AUN, PIF, Great Wall/UNESCO, WMO, etc. as they exist and are verified).

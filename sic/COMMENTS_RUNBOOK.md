@@ -19,6 +19,8 @@ To see what the video was about, look up its title/description (GET `https://www
 - Reply in the commenter's language when you can (English default).
 - Where natural, invite them to the long guide on the channel or to follow for daily scholarships — not in every reply.
 
+Policy guard (YouTube spam policy): every reply must be written for that specific comment — never paste the same text twice, never post generic "follow us" replies in bulk, no links other than official university/government pages, at most ~30 replies per run.
+
 ## 4. Post the reply
 `execute_zapier_write_action` tool_name `youtube_make_api_mutating_request`, action `_zap_raw_request`, params:
 `{"fail_on_errors":"false","method":"POST","url":"https://www.googleapis.com/youtube/v3/comments","querystring":{"part":"snippet"},"headers":{"Content-Type":"application/json"},"body":"{\"snippet\":{\"parentId\":\"THREAD_ID\",\"textOriginal\":\"REPLY TEXT\"}}"}`

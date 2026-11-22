@@ -10,7 +10,7 @@ Owner (SHAM) gave full control: research, script, render and post **without aski
 
 ## 1. Pick the topic (by slot, from the prompt)
 - FIRST read `CONTENT_POOL.md` (repo root) and follow its rotation rules — the channel covers ALL funded opportunities in China, not only CSC.
-- **Slot A (morning) and Slot B (afternoon):** one funded opportunity from the pool (categories 1–10 and 12): CSC tracks, provincial/city scholarships, university scholarships, Confucius Institute, MOFCOM, elite programs (Schwarzman, Yenching…), interesting programs, fellowships, postdocs, careers/jobs after a PhD. A and B on the same day must be different categories.
+- Since 22 Nov 2026 the channel posts **2 Shorts a day** (YouTube anti-mass-production policy): **Slot A (morning):** one funded opportunity from the pool (categories 1–10 and 12): CSC tracks, provincial/city scholarships, university scholarships, Confucius Institute, MOFCOM, elite programs (Schwarzman, Yenching…), interesting programs, fellowships, postdocs, careers/jobs after a PhD. Slot A must not repeat the previous day's Slot A category.
   Source ideas: https://cscguideofficials.com/ (latest posts), then VERIFY on the official university admission page or campuschina.org / studyinchina.csc.edu.cn.
   Prefer scholarships whose deadline is still open. Prefer well-known universities.
 - **Slot C (evening):** a practical how-to / tips Short for scholarship applicants, rotating topics, e.g.: how to email a Chinese professor for an acceptance letter; CSC documents checklist; study plan tips; recommendation letters; Type A vs Type B; how to find your agency number; physical exam form; police certificate; common mistakes that get CSC applications rejected; IELTS vs HSK requirements; stipend amounts by level; best months to apply; how to pick universities; life on a CSC scholarship.
@@ -21,6 +21,9 @@ Owner (SHAM) gave full control: research, script, render and post **without aski
 - Different scholarship/university/topic from everything in `sic/posted.md` (60 days for scholarships, never for tips).
 - Vary the HOOK style every time and never reuse a hook from the last 15 rows of posted.md. Rotate styles: question ("What if…?"), shocking fact ("This university pays you ¥3,500 a month"), urgency ("Deadline in 30 days!"), myth-buster ("You DON'T need an agent"), countdown ("3 things…"), "Stop scrolling if you want to study in China…".
 - Vary title wording and the order/angle of facts (eligibility-first, money-first, steps-first, deadline-first). Vary emojis.
+
+## 1c. Template rotation (anti-"template content" policy)
+Set `"style": N` in the spec, where N = (video number NNN) mod 4 → 0 classic (gold/red, male US voice), 1 ocean (blue, British male voice), 2 boxed (white caption boxes, deep male voice), 3 sunset (orange/purple, female voice). Also vary the number of beats (13–19), the order of information and the hook style, so no two consecutive videos have the same structure.
 
 ## 2. Write the spec (JSON) — see `sic/example_spec.json`
 `{"header": "...", "beats": [ {"say": ..., "cap": ..., "emo": ...}, ... ]}`
@@ -54,9 +57,10 @@ URL: `https://raw.githubusercontent.com/Ehtisham544/hello-world/videos/sic-NNN-s
 ## 5. Post with Zapier → YouTube `upload_video` (selected_api `YouTubeV4CLIAPI`, tool_name `youtube_upload_video`)
 params: `title` (catchy, ≤100 chars, ends with `#shorts`), `description` (what it covers, eligibility, steps, official links, deadline, "Follow Scholarships in China (SIC)…", 6–8 hashtags), `video` (the raw URL), `privacy_status` "public", `category_id` "27", `made_for_kids` "false", `default_language` "en", `default_audio_language` "en", `notify_subscribers` "true", `tags` (6–10).
 Confirm the result's `channelId` is `UC2SR24QYqYCaqp8wBYR70Qw`.
+Then set the AI-disclosure flag (YouTube policy: realistic AI voice/synthetic content must be disclosed; it does not reduce reach): Zapier `youtube_make_api_mutating_request`, method PUT, url `https://www.googleapis.com/youtube/v3/videos`, querystring `{"part":"status"}`, header Content-Type application/json, body `{"id":"VIDEO_ID","status":{"privacyStatus":"public","embeddable":true,"license":"youtube","publicStatsViewable":true,"selfDeclaredMadeForKids":false,"containsSyntheticMedia":true}}` → check the response shows `"containsSyntheticMedia":true`.
 
-## 5b. Starter comment
-Post one top-level comment on the new video inviting questions (Zapier `youtube_make_api_mutating_request`, method POST, url `https://www.googleapis.com/youtube/v3/commentThreads`, querystring `{"part":"snippet"}`, header Content-Type application/json, body `{"snippet":{"channelId":"UC2SR24QYqYCaqp8wBYR70Qw","videoId":"ID","topLevelComment":{"snippet":{"textOriginal":"…"}}}}`). Vary the wording; include the key deadline if known.
+## 5b. No starter comments on Shorts
+(YouTube spam policy: avoid repetitive comments. Starter comments are only posted on long videos.)
 
 ## 6. Log
 Append to `sic/posted.md`: `| NNN | date | slot | [cat N] topic | video id | https://youtube.com/shorts/ID |` and add the hook text at the end of the topic cell as `(hook: …)`, commit to `main` and push (`git -c push.negotiate=true push origin main`).

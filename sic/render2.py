@@ -1,7 +1,7 @@
 import json, math, sys, subprocess, re
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
-from beats import BEATS, HEADER
+from beats import BEATS, HEADER, STYLE
 
 W, H, FPS = 1080, 1920, 30
 GAP = 0.15
@@ -15,7 +15,7 @@ NF = int(TOTAL * FPS)
 FD = "/usr/share/fonts/opentype/inter/"
 def F(n, s): return ImageFont.truetype(FD + n, s)
 EMO = ImageFont.truetype("/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf", 109)
-NAVY = (10, 16, 40); RED = (230, 45, 30); GOLD = (255, 206, 60); WHITE = (255, 255, 255)
+NAVY = (10, 16, 40); RED = STYLE["pill"]; GOLD = STYLE["accent"]; WHITE = (255, 255, 255)
 
 def ease_back(x):
     x = min(max(x, 0), 1); c1 = 1.70158; c3 = c1 + 1
@@ -47,7 +47,7 @@ def emoji_img(e, size):
     im = im.crop(im.getbbox())
     r = size / max(im.size)
     return im.resize((int(im.width * r), int(im.height * r)), Image.LANCZOS)
-EMOJI = [emoji_img(b["emo"], 300) for b in BEATS]
+EMOJI = [emoji_img(b["emo"], STYLE["emo_size"]) for b in BEATS]
 
 def caption_layer(text):
     lines = text.split("\n")
@@ -65,10 +65,15 @@ def caption_layer(text):
         parts = re.split(r"(\*[^*]+\*)", l)
         tw = sum(d.textlength(p.strip("*"), font=fo) for p in parts if p)
         x = (W - tw) / 2; y = 10 + k * lh
+        if STYLE["box"]:
+            d.rounded_rectangle((x - 26, y + 4, x + tw + 26, y + lh - 2), radius=20, fill=(255, 255, 255, 240))
         for p in parts:
             if not p: continue
             hi = p.startswith("*"); p = p.strip("*")
-            d.text((x, y), p, font=fo, fill=GOLD if hi else WHITE, stroke_width=7, stroke_fill=(5, 8, 22))
+            if STYLE["box"]:
+                d.text((x, y), p, font=fo, fill=GOLD if hi else (15, 18, 30))
+            else:
+                d.text((x, y), p, font=fo, fill=GOLD if hi else WHITE, stroke_width=7, stroke_fill=(5, 8, 22))
             x += d.textlength(p, font=fo)
     return layer
 CAPS = {i: caption_layer(b["cap"]) for i, b in enumerate(BEATS) if "count" not in b}
@@ -76,7 +81,7 @@ CAPS = {i: caption_layer(b["cap"]) for i, b in enumerate(BEATS) if "count" not i
 HF = F("Inter-ExtraBold.otf", 34)
 def header(im):
     d = ImageDraw.Draw(im)
-    d.text((W / 2, 100), "SCHOLARSHIPS IN CHINA", font=F("Inter-Black.otf", 40), fill=GOLD, anchor="mm")
+    d.text((W / 2, 100), "SCHOLARSHIPS IN CHINA", font=F("Inter-Black.otf", 40), fill=(WHITE if STYLE["box"] else GOLD), anchor="mm")
     t = HEADER
     tw = d.textlength(t, font=HF); x0 = (W - tw) / 2 - 34
     d.rounded_rectangle((x0, 150, x0 + tw + 68, 216), radius=33, fill=RED)

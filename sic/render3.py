@@ -139,7 +139,7 @@ def bg(t):
     gg = _GROUP[bi]; src = M.pick(_TAGS[bi], f"{_TOPIC}:{gg}")
     k = int(round((t - _GSTART[gg]) * FPS))
     im = M.frame_for(src, k, W, H, gg).convert("RGBA")
-    im.alpha_composite(M.shade(W, H, 105))
+    im.alpha_composite(M.shade(W, H, R.STYLE['shade']))
     return im
 def frame(fi):
     t=fi/FPS; bi=max(i for i,s in enumerate(R.starts) if s<=t+1e-6); lt=t-R.starts[bi]; b=R.BEATS[bi]
@@ -150,14 +150,14 @@ def frame(fi):
     es=e.resize((max(1,int(e.width*sc)),max(1,int(e.height*sc))),Image.BILINEAR)
     rot=8*math.sin(lt*3)*(1-R.ease_out(lt/1.5))
     if abs(rot)>0.5: es=es.rotate(rot,resample=Image.BICUBIC,expand=True)
-    im.alpha_composite(es,(int(W/2-es.width/2),int(600-es.height/2+12*math.sin(lt*4))))
+    im.alpha_composite(es,(int(W/2-es.width/2),int(R.STYLE['emo_y']-es.height/2+12*math.sin(lt*4))))
     if "count" in b:
         cap=R.caption_layer(b["cap"].replace("{n}",f"{int(b['count']*R.ease_out((lt-0.9)/1.3)):,}"))
     else: cap=R.CAPS[bi]
     cs=0.82+0.18*R.ease_back(lt/0.22); c2=cap.resize((int(cap.width*cs),int(cap.height*cs)),Image.BILINEAR)
     a=min(1,lt/0.08)
     if a<1: c2.putalpha(c2.getchannel("A").point(lambda v:int(v*a)))
-    im.alpha_composite(c2,(int(W/2-c2.width/2),int(880+40*(1-R.ease_out(lt/0.25)))))
+    im.alpha_composite(c2,(int(W/2-c2.width/2),int(R.STYLE['cap_y']+40*(1-R.ease_out(lt/0.25)))))
     if bi==0 and lt<0.25: im.alpha_composite(Image.new("RGBA",(W,H),(255,255,255,int(200*(1-lt/0.25)))))
     elif lt<0.1: im.alpha_composite(Image.new("RGBA",(W,H),(255,255,255,int(50*(1-lt/0.1)))))
     return im.convert("RGB")
